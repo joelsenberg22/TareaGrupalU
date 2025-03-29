@@ -23,7 +23,7 @@ int main() {
     int opcion;
     
     do {
-        // Mostrar el menú principal
+        // Mostrar el menú principal 
         cout << "==================== MENU GENERAL ====================" << endl;
         cout << "Seleccione una opcion para ejecutar el programa:" << endl;
         cout << "------------------------------------------------------" << endl;
