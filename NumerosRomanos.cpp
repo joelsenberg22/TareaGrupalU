@@ -1,5 +1,7 @@
+// NumerosRomanos.cpp
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 string convertirARomano(int num) {
@@ -29,7 +31,7 @@ string convertirARomano(int num) {
     return romano;
 }
 
-int main() {
+void arabigoRomano() {
     int numero;
     
     cout << "Introduce un numero arabigo: ";
@@ -41,7 +43,5 @@ int main() {
         string romano = convertirARomano(numero);
         cout << "El numero " << numero << " en romano es: " << romano << endl;
     }
-    
-    return 0;
 }
 
