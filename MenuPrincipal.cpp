@@ -9,6 +9,7 @@
 #include "Tablas1al10.cpp"
 #include "FigurasGeometricas.cpp"
 #include "ContadorPalabras.cpp"
+#include "Palindromo.cpp"
 
 using namespace std;
 
@@ -28,6 +29,7 @@ int main() {
         cout << "Seleccione una opcion para ejecutar el programa:" << endl;
         cout << "------------------------------------------------------" << endl;
         cout << "1. Suma, Resta, Multiplicacion y Division de dos numeros" << endl;
+        cout << "2. Palindromo" << endl;
         cout << "5. Conversion de numeros arabigos a romanos" << endl;
         cout << "9. Tablas de multiplicar" << endl;
         cout << "13. Crear figuras geometricas basicas y Contar palabras en una frase" << endl;
@@ -42,6 +44,10 @@ int main() {
         switch(opcion) {
             case 1:
                 operacionesMatematicas();
+                limpiarPantallaYMostrarMenu(); 
+                break;
+   			 case 2:
+                verificarPalindromo();
                 limpiarPantallaYMostrarMenu(); 
                 break;
             case 5:
