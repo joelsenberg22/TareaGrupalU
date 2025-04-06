@@ -10,6 +10,10 @@
 #include "FigurasGeometricas.cpp"
 #include "ContadorPalabras.cpp"
 #include "Palindromo.cpp"
+#include "Tabla_multiplicar.cpp"
+#include "Decimal_hexadecimal.cpp"
+#include "Hipotenusa.cpp"
+#include "Numero_central.cpp"
 
 using namespace std;
 
@@ -29,11 +33,15 @@ int main() {
         cout << "Seleccione una opcion para ejecutar el programa:" << endl;
         cout << "------------------------------------------------------" << endl;
         cout << "1. Suma, Resta, Multiplicacion y Division de dos numeros" << endl;
-        cout << "2. Palindromo" << endl;
+        cout << "4. Palindromo" << endl;
         cout << "5. Conversion de numeros arabigos a romanos" << endl;
+        cout << "8. Ingrese la tabla de multiplicar que desee" << endl;
         cout << "9. Tablas de multiplicar" << endl;
+        cout << "12. Convertir numero Decimal a Hexadecimal" << endl;
         cout << "13. Crear figuras geometricas basicas y Contar palabras en una frase" << endl;
+        cout << "16. Calcular la Hipotenusa" << endl;
         cout << "17. Contar palabras en una frase" << endl;
+        cout << "20. Numero Central de tres digitos" << endl;
         cout << "0. Salir" << endl;
         cout << "------------------------------------------------------" << endl;
         
@@ -46,7 +54,7 @@ int main() {
                 operacionesMatematicas();
                 limpiarPantallaYMostrarMenu(); 
                 break;
-   			 case 2:
+   			 case 4:
                 verificarPalindromo();
                 limpiarPantallaYMostrarMenu(); 
                 break;
@@ -54,16 +62,32 @@ int main() {
                 arabigoRomano();
                 limpiarPantallaYMostrarMenu(); 
                 break;
+            case 8:
+                tablaMultiplicar();
+                limpiarPantallaYMostrarMenu(); 
+                break;
             case 9:
                 imprimirTablas();
+                limpiarPantallaYMostrarMenu(); 
+                break;
+            case 12:
+                convertirDecimalAHexadecimal();
                 limpiarPantallaYMostrarMenu(); 
                 break;
             case 13:
                 figurasGeometricas();
                 limpiarPantallaYMostrarMenu(); 
                 break;
+            case 16:
+                calcularHipotenusa();
+                limpiarPantallaYMostrarMenu(); 
+                break;
             case 17:
                 ejecutarContarPalabras();
+                limpiarPantallaYMostrarMenu(); 
+                break;
+            case 20:
+                encontrarNumeroCentral();
                 limpiarPantallaYMostrarMenu(); 
                 break;
             case 0:
